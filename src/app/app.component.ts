@@ -24,8 +24,6 @@ export class AppComponent implements OnInit {
       .subscribe((data: any) => {
         this.exchangeUSD = JSON.parse(JSON.stringify(data[0]))
         this.exchangeEUR = JSON.parse(JSON.stringify(data[1]))
-        console.log(this.exchangeUSD)
-        console.log(this.exchangeEUR)
       })
   }
 }
